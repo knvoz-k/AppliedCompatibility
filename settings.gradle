@@ -16,6 +16,10 @@ pluginManagement {
             url = 'https://maven.wagyourtail.xyz/releases'
         }
         maven {
+            name = 'CleanroomMirror'
+            url = 'https://maven.cleanroommc.com/releases'
+        }
+        maven {
             url = 'https://maven.outlands.top/releases'
         }
 

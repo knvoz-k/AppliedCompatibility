@@ -1,7 +1,6 @@
 package appeng.core;
 
 import appeng.api.IAppEngApi;
-import appeng.api.definitions.IDefinitions;
 import appeng.api.features.IRegistryContainer;
 import appeng.api.networking.IGridHelper;
 import appeng.api.parts.IPartHelper;
@@ -22,7 +21,7 @@ public final class Api implements IAppEngApi {
     private final IStorageHelper storage = new ApiStorage();
     private final IPartHelper partHelper = new ApiPart();
     private final IClientHelper clientHelper = new ApiClientHelper();
-    private final IDefinitions definitions = new ApiDefinitions();
+    private final ApiDefinitions definitions = new ApiDefinitions();
 
     private Api() {
     }
@@ -48,7 +47,7 @@ public final class Api implements IAppEngApi {
     }
 
     @Override
-    public IDefinitions definitions() {
+    public ApiDefinitions definitions() {
         return this.definitions;
     }
 

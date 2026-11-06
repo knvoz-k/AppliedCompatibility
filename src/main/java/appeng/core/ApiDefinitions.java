@@ -3,7 +3,6 @@ package appeng.core;
 import appeng.api.definitions.IBlocks;
 import appeng.api.definitions.IDefinitions;
 import appeng.api.definitions.IItems;
-import appeng.api.definitions.IMaterials;
 import appeng.api.definitions.IParts;
 import appeng.core.api.definitions.ApiBlocks;
 import appeng.core.api.definitions.ApiItems;
@@ -14,7 +13,7 @@ public final class ApiDefinitions implements IDefinitions {
 
     private final IItems items = new ApiItems();
     private final IBlocks blocks = new ApiBlocks();
-    private final IMaterials materials = new ApiMaterials();
+    private final ApiMaterials materials = new ApiMaterials();
     private final IParts parts = new ApiParts();
 
     @Override
@@ -28,7 +27,7 @@ public final class ApiDefinitions implements IDefinitions {
     }
 
     @Override
-    public IMaterials materials() {
+    public ApiMaterials materials() {
         return this.materials;
     }
 
